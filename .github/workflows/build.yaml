@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: Dockerfile.archlinux
+          file: Dockerfile.arch
           push: true
           tags: |
             hub.docker.io/richardmoe/toolbox:latest
