@@ -33,5 +33,3 @@ jobs:
           tags: |
             hub.docker.io/richardmoe/toolbox:latest
             hub.docker.io/richardmoe/toolbox:${{github.run_number}}
-          platforms:
-            - linux/amd64
