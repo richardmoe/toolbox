@@ -3,6 +3,6 @@ RUN useradd -m builder
 RUN pacman -Sy --needed --noconfirm sudo git base-devel archlinux-keyring nmap emacs-nox tmux rsync openssh nfs-utils
 RUN echo "builder ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/01_builder
 RUN pacman -Suy --noconfirm
-RUN sudo -u builder yay -Sy --needed --noconfirm gnu-netcat ldns bind traceroute iperf3 vault 
+RUN sudo -u builder yay -Sy --needed --noconfirm nmap emacs-nox rsync tmux gnu-netcat ldns bind traceroute iperf3 vault nfs-utils cifs-utils openssh
 
 CMD ["/bin/bash"]
